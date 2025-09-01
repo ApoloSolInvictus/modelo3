@@ -62,29 +62,29 @@
         .animate-bounce-slow {
             animation: bounce 2s infinite;
         }
+        .section-title {
+            border-bottom: 2px solid #3b82f6; /* Blue-500 */
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
     </style>
 </head>
-<body class="bg-white text-gray-800">
+<body class="bg-gray-50 text-gray-800">
 
     <main>
         <!-- Hero Section -->
         <section id="inicio" class="hero-section text-center text-white p-6">
-            <!-- Background GIF -->
             <img src="images/garcia.gif" alt="Fondo dinámico de oficina legal" class="hero-background-gif">
-            <!-- Overlay -->
             <div class="hero-overlay"></div>
             
             <div class="hero-content">
-                <!-- Logo del Cliente -->
                 <img src="images/logo.png" alt="Logo de Abogados García & Asoc." class="w-48 h-auto mb-8">
-                
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">García & Asociados</h1>
                 <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8">Estrategia y defensa legal para el éxito de su empresa.</p>
                 <a href="#quienes-somos" class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform hover:scale-105">
                     Conozca la Firma
                 </a>
             </div>
-            <!-- Scroll Down Indicator -->
             <a href="#quienes-somos" class="pb-8 relative z-10">
                 <svg class="w-8 h-8 text-gray-400 animate-bounce-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </a>
@@ -93,8 +93,8 @@
         <!-- Header (Aparece al hacer scroll) -->
         <header class="bg-white/80 backdrop-blur-lg shadow-sm sticky top-0 z-50">
             <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <a href="#inicio" class="text-xl font-bold">García & Asoc.</a>
-                <div class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-xl font-bold text-gray-900">García & Asoc.</a>
+                <div class="hidden md:flex space-x-8 text-gray-600 font-medium">
                     <a href="#quienes-somos" class="hover:text-blue-600 transition-colors">Quiénes Somos</a>
                     <a href="#servicios" class="hover:text-blue-600 transition-colors">Servicios</a>
                     <a href="#blog" class="hover:text-blue-600 transition-colors">Blog</a>
@@ -103,15 +103,97 @@
             </nav>
         </header>
 
-        <!-- El resto del contenido del sitio irá aquí -->
-        <div id="quienes-somos" class="py-24 text-center">
-            <h2 class="text-3xl font-bold mb-4">Contenido del Sitio Web</h2>
-            <p>Aquí se desarrollarán las demás secciones: Quiénes Somos, Servicios, Blog y Contacto.</p>
-        </div>
+        <!-- Quiénes Somos Section -->
+        <section id="quienes-somos" class="py-24 bg-white">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://placehold.co/600x400/e2e8f0/334155?text=Nuestra+Firma" alt="Oficina de Abogados García & Asociados" class="rounded-lg shadow-xl">
+                </div>
+                <div class="text-left">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4 section-title">Nuestra Firma</h2>
+                    <p class="text-lg text-gray-600 mb-4">
+                        Con más de 20 años de experiencia, García & Asociados se ha consolidado como un pilar en la asesoría legal corporativa. Nuestra misión es ofrecer soluciones jurídicas innovadoras y efectivas que protejan y potencien el crecimiento de nuestros clientes.
+                    </p>
+                    <p class="text-gray-600">
+                        Creemos en la integridad, la excelencia y una relación de confianza mutua como los cimientos de nuestro éxito.
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Servicios / Áreas de Práctica Section -->
+        <section id="servicios" class="py-24 bg-gray-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 section-title">Áreas de Práctica</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Servicio 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-left">
+                        <h3 class="text-xl font-bold mb-3">Derecho Corporativo</h3>
+                        <p class="text-gray-600">Asesoría integral en la constitución, operación y disolución de sociedades comerciales.</p>
+                    </div>
+                    <!-- Servicio 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-left">
+                        <h3 class="text-xl font-bold mb-3">Litigio y Arbitraje</h3>
+                        <p class="text-gray-600">Representación experta en disputas comerciales complejas ante tribunales y paneles de arbitraje.</p>
+                    </div>
+                    <!-- Servicio 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md text-left">
+                        <h3 class="text-xl font-bold mb-3">Propiedad Intelectual</h3>
+                        <p class="text-gray-600">Protección y registro de marcas, patentes y derechos de autor para salvaguardar sus activos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12 section-title">Publicaciones Recientes</h2>
+                <div class="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <!-- Post 1 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                        <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Análisis+Legal" class="w-full h-48 object-cover" alt="Artículo sobre análisis legal">
+                        <div class="p-6 text-left">
+                            <p class="text-sm text-gray-500 mb-2">31 de Agosto, 2025</p>
+                            <h3 class="text-lg font-bold mb-2">La Nueva Ley de Sociedades Anónimas: Un Análisis Profundo</h3>
+                            <a href="#" class="font-medium text-blue-600 hover:underline">Leer más &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Post 2 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=Propiedad+Intelectual" class="w-full h-48 object-cover" alt="Artículo sobre propiedad intelectual">
+                        <div class="p-6 text-left">
+                            <p class="text-sm text-gray-500 mb-2">15 de Agosto, 2025</p>
+                            <h3 class="text-lg font-bold mb-2">Cómo Proteger tu Marca en la Era Digital</h3>
+                            <a href="#" class="font-medium text-blue-600 hover:underline">Leer más &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Post 3 -->
+                    <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
+                        <img src="https://placehold.co/600x400/ef4444/ffffff?text=Litigio" class="w-full h-48 object-cover" alt="Artículo sobre litigio">
+                        <div class="p-6 text-left">
+                            <p class="text-sm text-gray-500 mb-2">01 de Agosto, 2025</p>
+                            <h3 class="text-lg font-bold mb-2">Claves para un Arbitraje Comercial Exitoso</h3>
+                            <a href="#" class="font-medium text-blue-600 hover:underline">Leer más &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section -->
+        <section id="contacto" class="py-24 bg-gray-900 text-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl md:text-4xl font-extrabold mb-8">Contáctenos</h2>
+                 <p class="max-w-xl mx-auto mb-10 text-gray-300">Agende una consulta para discutir cómo podemos ayudar a su empresa a navegar el complejo panorama legal.</p>
+                 <a href="mailto:consultas@garciayasoc.com" class="bg-white text-gray-900 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-transform hover:scale-105">
+                    Agendar Consulta
+                 </a>
+            </div>
+        </section>
     </main>
 
-    <footer class="bg-gray-900 text-white py-6">
+    <footer class="bg-gray-800 text-white py-6">
         <div class="container mx-auto px-6 text-center text-gray-400 text-sm">
             <p>&copy; 2025 Abogados García & Asoc. | Sitio web por <a href="https://profcr.com" target="_blank" class="font-semibold hover:text-white">ProfCR.com</a></p>
         </div>
